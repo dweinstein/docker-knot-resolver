@@ -10,9 +10,7 @@ The [`Dockerfile`](Dockerfile) is using an ["official"](https://hub.docker.com/r
 
 We specify a TLS policy in the [config.docker](config.docker):
 
-```lua
-policy.add(policy.all(policy.TLS_FORWARD({{'1.1.1.1', hostname='cloudflare-dns.com', ca_file='/data/DigiCertGlobalRootCA.crt' }})))
-```
+next dns policy (UPDATED)
 
 ## Metrics
 Since we're using knot-resolver under the hood we can access some metrics from the service:
